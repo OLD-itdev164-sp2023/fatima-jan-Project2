@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/travel1.jpg",
+        "alt": "The sky is your limit",
+        "name": "airplane clouds",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/travel2.jpg",
+        "alt": "Washington Mountain",
+        "name": "Mountains",
+        "button": "View Destination"
+    },
+        {
+        "img": "../assets/images/travel3.jpg",
+        "alt": "The taj-mahal",
+        "name": "taj mahal",
+        "button": "View Destination"
+    },
+        {
+        "img": "../assets/images/travel4.jpg",
+        "alt": "Hiking Peru",
+        "name": "Peru",
+        "button": "View Destination"
+    }
+]
