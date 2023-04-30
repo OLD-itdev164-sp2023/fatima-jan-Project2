@@ -1,0 +1,23 @@
+[
+    {
+        "img": "../assets/images/niagraFalls.jpg",
+        "name": "Niagara falls",
+        "description": "mperdiet lacinia lacus"
+    
+    },
+    {
+        "img": "../assets/images/mountRainier.jpg",
+        "name": "Mountain Rainier",
+        "description": "mperdiet lacinia lacus"
+    },
+    {
+        "img": "../assets/images/smoky.jpg",
+        "name": "The Smoky Mountain",
+        "description": "mperdiet lacinia lacus"
+    },
+    {
+        "img": "../assets/images/tajMahal.jpg",
+        "name": "The Taj Mahal",
+        "description": "mperdiet lacinia lacus"
+    }
+]
