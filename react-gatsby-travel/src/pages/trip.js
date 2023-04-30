@@ -21,8 +21,7 @@ const getTrips = (data) => {
         <ImLocation />
         <ProductTitle>{item.node.name}</ProductTitle>
         </TextWrap>
-        <Button to="/"
-        round="true" 
+      <Button as={Link} to="/destinations" round="true"
         css={`
         position: absolute; 
         top: 230px;
@@ -35,7 +34,7 @@ const getTrips = (data) => {
   return tripsArray
 }
 
-const Trips = ({heading}) => {
+const Trips = () => {
   const data = useStaticQuery(graphql`
     query {
       allTripsJson {
@@ -57,7 +56,7 @@ const Trips = ({heading}) => {
 
   return (
     <ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
+      <ProductsHeading>Our Favorite Destinations</ProductsHeading>
       <ProductWrapper>{getTrips(data)}</ProductWrapper>
     </ProductsContainer>
   )

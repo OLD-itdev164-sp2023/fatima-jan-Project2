@@ -23,54 +23,51 @@ const Destinations = () => {
     }
   `)
 
-  return (
-    
+ return (
+  
     <Box
       sx={{
-        display: "flex",
-        flexDirection: "column",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+        gap: 6,
         alignItems: "center",
         justifyContent: "center",
         background: "linear-gradient(to bottom, #f4f4f4, #f4f4f4)",
-        mb : 4,
+        padding: 6,
+        mb: 4,
       }}
-    >
-      <Heading sx={{ mb: 3 }}>Destinations</Heading>
-        <Button
-    as={Link}
-    to="/"
-    variant="secondary"
-    sx={{ mb: 3 }} // add margin-bottom to the Button component
-  >
-    Back to Home
-  </Button>
+    > 
+    <Box sx={{ gridColumn: "1/-1", textAlign: "center" }}>
+    <Heading sx={{ mb: 4, fontSize: 6 }}>Destinations</Heading>
+    <Button as={Link} to="/" variant="primary" sx={{ mb: 3 }}>
+      Back to Home
+    </Button>
+    </Box>
       {data.allDestinationsJson.edges.map(({ node }) => (
         <Box
           key={node.name}
           sx={{
-            display: "flex",
+            display: "grid",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            width: 300,
-            height: 300,
-            margin: 10,
+            width: "100%",
+            height: "100%",
             border: "1px solid gray",
             borderRadius: 8,
-            padding: 16,
+            padding: 40,
             boxShadow: "0px 5px 10px rgba(0,0,0,0.2)",
           }}
         >
-          <Text fontSize={4} fontWeight="bold">
+          <Text fontSize={4} fontWeight="bold" sx={{ textAlign: "center", mb: 3 }}>
             {node.name}
           </Text>
-          <Box sx={{ mb: 2 }}>
+          <Box sx={{ mb: 3 }}>
             <img src={node.img.childImageSharp.gatsbyImageData.images.fallback.src} alt={node.name} />
           </Box>
-          <Text>{node.description}</Text>
+          <Text sx={{ textAlign: "center" }}>{node.description}</Text>
         </Box>
       ))}
-     
     </Box>
   )
 }
