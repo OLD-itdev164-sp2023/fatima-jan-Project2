@@ -4,6 +4,7 @@ import { Heading, Text, Box } from "rebass"
 import { Link } from "gatsby"
 import { Button } from "../components/Button"
 
+
 const Destinations = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -24,7 +25,6 @@ const Destinations = () => {
   `)
 
  return (
-  
     <Box
       sx={{
         display: "grid",
