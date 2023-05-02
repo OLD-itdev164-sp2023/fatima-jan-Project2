@@ -2,6 +2,7 @@ import React from "react"
 import { Box, Heading, Text } from "rebass"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Layout from "../components/layout"
 import { Button } from "../components/Button"
 
 const ContactForm = styled.form`
@@ -39,6 +40,7 @@ const SubmitButton = styled.button`
 `
 
 const Contact = () => (
+  <Layout>
   <Box sx={{ py: 5 }}>
     <Heading sx={{ textAlign: "center", mb: 4 }}>Contact Us</Heading>
     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -59,6 +61,7 @@ const Contact = () => (
       We would love to hear from you!
     </Text>
   </Box>
+  </Layout>
 )
 
 export default Contact

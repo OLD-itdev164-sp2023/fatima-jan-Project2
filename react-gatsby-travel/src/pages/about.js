@@ -25,7 +25,7 @@ margin-top: 200px;
 `
 
 const AboutPage = () => (
-    <AboutUsSection>
+  <AboutUsSection>
   <Box sx={{ py: 5 }}>
     <Heading sx={{ textAlign: "center", mb: 5 }}>About Us</Heading>
     <Box sx={{ textAlign: "center", mt: 4 }}>
@@ -61,6 +61,7 @@ const AboutPage = () => (
     </AboutText>
   </Box>
   </AboutUsSection>
+  
 )
 
 export default AboutPage
